@@ -1,0 +1,27 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+nav .container {
+  /* padding-left: 10px; */
+}
+.navbar-brand img{
+  width: 120px;
+  height: 60px
+}
+
+.email strong {
+  font-weight: 400;
+}
+.email {
+  position: relative;
+  right: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+*{
+  box-sizing: border-box;
+}
