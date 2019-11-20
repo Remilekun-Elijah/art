@@ -1,0 +1,30 @@
+/* @media (min-width: 768px){
+ .tab-fs{
+  font-size: 18px;
+  
+ }
+
+}
+@media (min-width: 576px){
+ .mobile-lg-fs{
+  font-size: 14px;
+
+ }
+ .pd-mobile-sm{
+  padding: 5px 10px 5px 50px !important;
+  border-top-left-radius: 30px;
+ }
+
+}
+
+@media (max-width: 767.98px){
+ .tab-fs {
+  font-size: 16px;
+ }
+}
+
+@media (max-width: 575.98px){
+ .mobile-lg-fs {
+  font-size: 13px;
+ }
+} */
