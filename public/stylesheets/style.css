@@ -2,7 +2,6 @@ body {
   /* box-shadow: 2px 2px 1px #aaa, -2px -2px 1px #aaa; */
   /* margin: 0 50px !important; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  padding-bottom: 5em;
 }
 nav{
   /* padding-left: 10px; */
@@ -157,6 +156,35 @@ button span {
   100%{
     background: #08B6FF/*#1890C3 */;
   }
+}
+#forth-section {
+  background: #333;
+  color: white;
+
+}
+#forth-section h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+#forth-section .contact i:nth-child(odd){
+  color: #08B6FF;
+  border: 1px solid #08B6FF;
+  border-radius: 50px;
+  padding: 6px;
+}
+#forth-section .contact .fa-youtube {
+  border-radius: 5px;
+  color: #08B6FF;
+  border: 1px solid #08B6FF;
+  padding:  5px;
+  width: 35px;
+  height: 27px;
+  text-align: center;
+  vertical-align: middle;
+}
+footer ul li {
+  list-style: none;
 }
 *{
   box-sizing: border-box;

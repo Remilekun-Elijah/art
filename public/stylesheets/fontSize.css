@@ -738,4 +738,24 @@
     .text-sm-max-right{
         text-align: right !important;
     }
+
+    .width-sm-max-70{
+        width: 70px !important;
+    }
+    .width-sm-max-80{
+        width: 80px !important;
+    }
+    .width-sm-max-90{
+        width: 90px !important;
+    }
+    .width-sm-max-100{
+        width: 100px !important;
+    }
+    .width-sm-max-150{
+        width: 150px !important;
+    }
+    .width-sm-max-200{
+        width: 200px !important;
+    }
+
 }
