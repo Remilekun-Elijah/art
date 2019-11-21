@@ -18,9 +18,7 @@ nav{
 .email strong {
   font-weight: 400;
 }
-.email {
-  /* display: block; */
-}
+
 .email button{
   color: white;
   background: #29ABE2 0% 0% no-repeat padding-box;
