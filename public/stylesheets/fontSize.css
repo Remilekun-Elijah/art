@@ -443,6 +443,12 @@
     .text-sm-min-30 {
         font-size: 30px !important;
     }
+    .text-sm-min-40 {
+        font-size: 40px !important;
+    }
+    .text-sm-min-50 {
+        font-size: 50px !important;
+    }
     
     .text-sm-min-center{
         text-align: center !important;
@@ -683,9 +689,34 @@
         margin-top: 15px;
     }
     .margin-top-sm-max-20{
-        margin-top: 20px;
+        margin-top: 20px !important;
+    }
+    .margin-top-sm-max-25{
+        margin-top: 25px;
+    }
+    .margin-top-sm-max-30{
+        margin-top: 30px !important;
     }
 
+    /* MARGIN BOTTOM */
+    .margin-bottom-sm-max-5{
+        margin-bottom: 5px;
+    }
+    .margin-bottom-sm-max-10{
+        margin-bottom: 10px;
+    }
+    .margin-bottom-sm-max-15{
+        margin-bottom: 15px;
+    }
+    .margin-bottom-sm-max-20{
+        margin-bottom: 20px;
+    }
+    .margin-bottom-sm-max-25{
+        margin-bottom: 25px;
+    }
+    .margin-bottom-sm-max-30{
+        margin-bottom: 30px;
+    }
 
     .border-radius-0{
         border-radius: 0 !important;
@@ -727,6 +758,15 @@
 
     .text-sm-max-30 { 
         font-size: 30px !important;
+    }
+    .text-sm-max-35 { 
+        font-size: 35px !important;
+    }
+    .text-sm-max-40 { 
+        font-size: 40px !important;
+    }
+    .text-sm-max-50 { 
+        font-size: 50px !important;
     }
     
     .text-sm-max-center{
