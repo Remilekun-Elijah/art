@@ -1,8 +1,15 @@
-body {
-  /* box-shadow: 2px 2px 1px #aaa, -2px -2px 1px #aaa; */
-  /* margin: 0 50px !important; */
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
+/* body{
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  max-width: 1800px;
+} */
+body , h1, h2, h3, h4 , h5, p, strong, a{
+
+  font-family: sans-serif;
+}
+p, strong, span, footer li{
+  font-family: Tahoma;
+  /* font-size: 15px; */
 }
 nav{
   /* padding-left: 10px; */
@@ -22,7 +29,7 @@ nav{
 .email button{
   color: white;
   background: #29ABE2 0% 0% no-repeat padding-box;
-  padding: 10px 10px 10px 40px !important;
+  padding: 12px 20px 10px 45px !important;
   border: none;
   /* border-radius: 0%; */
   border-bottom-left-radius: 20px;
@@ -31,6 +38,8 @@ nav{
   border-top-right-radius: 0%;
   border-bottom-right-radius: 0%;
 }
+
+
 .btn-cyan{
   background: #1890C3;
   color: #fff;
@@ -38,16 +47,60 @@ nav{
 .btn-cyan:hover{
   background:rgb(12, 163, 228);
   color: #fff;
-  /* border: 1p x solid #1890C3; */
 }
+main .bg-grey{
+  background: #F0F0F0 ;
+}
+.bg-cyan {
+  background: #1890C3 !important;
+}
+.bg-oil-dark{
+  background: #2F2F2F !important;
+}
+.btn-outline-cyan {
+  border-color: #1890C3;
+  background-color: #fff;
+  border-radius: 0;
+  border-width: 2px !important;
+}
+.btn-outline-cyan:hover{
+  color: #fff;
+  background-color: #1890C3;
+}
+.bg-black {
+  background: #000;
+}
+.text-oil-dark{
+  color: #2F2F2F;
+}
+.border-width-2 {
+  border-width: 2px !important;
+}
+.border-color-cyan-like {
+  border-top-color: #1890C3 !important;
+  border-left-color: #1890C3 !important;
+  border-bottom-color: #4C8AA3 !important;
+  border-right-color: #4C8AA3 !important;
+  
+}
+
+.border-radius-5{
+  border-radius: 5px;
+}
+
 #navbarNav li {
   color: white;
   font-weight: 400;
   text-transform: uppercase;
   font-style: "SF Compact Display", regular;
 }
+
 .navbar-nav .nav-link {
   color: white !important;
+  padding-left: 0 !important; 
+  padding-right: 0 !important;
+  margin-right: .5em;
+  margin-left: .5em;
 }
 .navbar-nav {
   position: relative;
@@ -57,17 +110,79 @@ nav{
   border: none;
   border-top-left-radius: 30px;
 }
+.navbar {
+  padding: 0% !important;
+}
+
+/* HEADER */
+@media (max-width: 767.98px){
+  #third-section .line {
+      width: 63%;
+  }
+  .fixed-size-card .card {
+    height: 270px;
+  /* min-height: 250px !important */
+  }
+}
+@media (max-width: 625px){
+.fixed-size-card .card {
+  height: 290px !important;
+  /* min-height: 200px !important */
+}
+}
+
+@media (max-width: 592px){
+.fixed-size-card .card {
+  height: 345px !important;
+  /* min-height: 200px !important */
+}
+}
+
+@media (max-width: 575px){
+.fixed-size-card .card {
+  height: 180px !important;
+  /* min-height: 200px !important */
+}
+}
+
+@media (max-width: 508px){
+.fixed-size-card .card {
+  height: 250px !important;
+  /* min-height: 200px !important */
+}
+}
+
+@media (max-width: 305px){
+.fixed-size-card .card {
+  height: 330px !important;
+  /* min-height: 200px !important */
+}
+}
+
+@media (max-width: 250px){
+.fixed-size-card .card {
+  height: 350px !important;
+  /* min-height: 200px !important */
+}
+}
+
+@media (max-width: 244px){
+.fixed-size-card .card {
+  height: 380px !important;
+  /* min-height: 200px !important */
+}
+}
 
 /*  MAIN */
-main header {
+main #index {
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  /* background-attachment: fixed; */
   background-size: cover;
   width: 100%;
   height: 500px;
 }
-main header .container {
+main header .containment {
   height: 500px;
   color: white;
   display: flex;
@@ -81,16 +196,6 @@ main header .wrapper{
   height: 500px;
   width: 100%;
 }
-
-.bg-cyan {
-  background: #1890C3 !important;
-}
-.bg-oil-dark{
-  background: #2F2F2F !important;
-}
-/* main header .container h1 {
-  font-size: 40px;
-} */
 
 section .card .fa p {
   text-transform: uppercase;
@@ -108,12 +213,6 @@ section .card .card-body {
   justify-content: center;
   position: relative;
   top: -60px
-}
-.navbar button {
-  /* background-color: #333 !important */
-}
-button span {
-  color: white
 }
 
 /* SECOND SECTION */
@@ -133,57 +232,23 @@ button span {
   font-weight: 500;
 }
 
-#second-section .btn-outline-cyan{
-  border-color: #1890C3;
-  background-color: #fff;
-  border-radius: 0;
-}
-#second-section .btn-outline-cyan:hover{
-  color: #fff;
-  background-color: #1890C3;
-}
+
 /* THIRD SECTION */
 #third-section .line{
-  /* border-bottom: 3px solid transparent; */
-  background: linear-gradient(to right, grey, black);
-  height: 3px;
+  opacity: .5;
   width: 80%;
   margin-top: 6px;
   margin-left: 7px;
+  border-bottom: 1px solid grey;
 }
 #third-section .d-flex h1{
   font-weight: 500;
 }
-#third-section img{
-  
-  border-top-right-radius: 50px;
-}
+
 #third-section .card-text{
   margin-top: 10px;
 }
-#third-section .card-bod{
-  /* animation-name: color; */
-  background: white;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  border-radius: 10px;
-  box-shadow: 0px -3px 2px 0px #000;
-}
-/* @keyframes color {
-  0%{
-    background: #08B6FF;
-  }
-  35%{
-    background:rgb(12, 163, 228);
-  }
-  65%{
-    background: #1890C3;
-  }
-  100%{
-    background: #08B6FF;
-  }
-} */
+
 
 #forth-section {
   color: white;
@@ -197,6 +262,11 @@ button span {
 }
 #forth-section p, ul li {
   color: #D6D6D6;
+}
+
+#forth-section .quicklink{
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
 }
 
 #forth-section .contact i:nth-child(odd){
@@ -218,8 +288,102 @@ button span {
 footer ul li {
   list-style: none;
 }
+
+/*** SERVICES ***/
+main #service {
+  background-image: url('../images/services.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+#service h4{
+  display: flex;
+  margin-left: -13px;
+  font-weight: normal;
+}
+#service .renew {
+  width: 220px;
+  height: 150px;
+  background: rgba(255, 255, 255, .2);
+}
+
+#service .trans {
+  width: 170px;
+  height: 130px;
+  background: rgba(255, 255, 255, .2);
+}
+
+#service .tech {
+  width: 150px;
+  height: 100px;
+  background: rgba(255, 255, 255, .2);
+}
+#service .oilandgas {
+  width: 170px;
+  height: 130px;
+  background: rgba(255, 255, 255, .2);
+}
+
+#service img {
+  width: 60px;
+}
+#service .card-body {
+  border-radius: 5px !important;
+}
+
+/*** ABOUT ***/
+  main #about {
+    height: 300px;
+  }
+  
+
+  #about .hr{
+    opacity: .1;
+    /* width: 80%; */
+    margin-top: 6px;
+    margin-left: 7px;
+    border-bottom: 1.5px solid grey;
+  }
+   .lines{
+    border-bottom: 2px solid #1890C3;
+    width: 100%;
+    opacity: .9;
+  }
+  #about .text p {
+    font-weight: 500;
+    /* font-size: 19px; */
+  }
+  .liness{
+    border-bottom: 2px solid #1890C3;
+    width: 30%;
+    opacity: .9;
+  }
 *{
+
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.container {
+  /* width: 0 !important; */
+}
+@media (min-width: 768px){
+  
+  #about .col-md-4 {
+    flex: 0 0 32%;
+    max-width: 32% !important;
+    margin-right: 1.33333%;
+  }
+}
+@media (max-width: 375px){
+  button, p, strong, span, footer li{
+    font-size: 15px !important;
+  }
+  h1{
+    font-size: 20px !important
+    ;
+  }
 }

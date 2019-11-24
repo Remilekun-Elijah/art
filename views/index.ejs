@@ -1,13 +1,10 @@
 
 <% include ./layout %>
 <style>
-  .navbar-nav .home{
+  .navbar-nav #home{
     border-bottom: 4px solid white;
   }
-  .quicklink{
-    border-right: 1px solid grey;
-    border-left: 1px solid grey;
-  }
+
   @media (max-width: 991.98px){
     #third-section .line {
         width: 73%;
@@ -17,7 +14,60 @@
     #third-section .line {
         width: 63%;
     }
+    #first-section .card {
+      height: 270px;
+    /* min-height: 250px !important */
+    }
 }
+@media (max-width: 625px){
+  #first-section .card {
+    height: 290px !important;
+    /* min-height: 200px !important */
+  }
+}
+
+  @media (max-width: 592px){
+  #first-section .card {
+    height: 345px !important;
+    /* min-height: 200px !important */
+  }
+}
+
+@media (max-width: 575px){
+  #first-section .card {
+    height: 180px !important;
+    /* min-height: 200px !important */
+  }
+}
+
+  @media (max-width: 508px){
+  #first-section .card {
+    height: 250px !important;
+    /* min-height: 200px !important */
+  }
+}
+
+  @media (max-width: 305px){
+  #first-section .card {
+    height: 330px !important;
+    /* min-height: 200px !important */
+  }
+}
+
+  @media (max-width: 250px){
+  #first-section .card {
+    height: 350px !important;
+    /* min-height: 200px !important */
+  }
+}
+
+  @media (max-width: 244px){
+  #first-section .card {
+    height: 380px !important;
+    /* min-height: 200px !important */
+  }
+}
+
 @media (max-width: 545.98px){
   .email {
   position: relative;
@@ -41,6 +91,7 @@
     border-right-width: 0px;
   }
 }
+
 @media (max-width: 492px){
     #third-section .line {
         width: 60%;
@@ -69,63 +120,21 @@
 
 
 </style>
-<nav class="navbar navbar-expand-sm navbar-light bg-light margin-right-sm-max-15">
-  <a class="navbar-brand  padding-left-sm-max- padding-left-" href="/"> <img src="images/logo.png" class="width-sm-max-100 width-tab-min-150" alt="brand logo" srcset=""></a>
-  <button class="navbar-toggler" style="border-color: #29ABE2 !important" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span style="color: #29ABE2 !important;" class="fa fa-bars"></span>
-  </button>
-  
-  <div class="collapse mb-sm-max-3 navbar-collapse d-sm-flex flex-sm-column" id="navbarNav">
-      <div class="div email align-self-end justify-content-right"> <strong>info@absoluterisktec.co.uk</strong> <button class="btn btn-cyan text-sm-max-20 text-tab-min-16  mobile-sm-fs border-radius-0">Email Us</button></div>
-
-    <ul class="navbar-nav align-self-end pd-mobile-sm border-radius-0 text-sm-min-13 text-tab-min-18">
-        
-        <li class="nav-item home lap-fs lap-lg-fs mobile-lg-fs mobile-min-fs mobile-sm-fs"> <a class="nav-link" href='/'>Home</a></li>
-        <li class="nav-item ipad-min-fs min-fs"> <a class="nav-link" href='/service'>Services </a></li>
-        <li class="nav-item ipad-min-fs min-fs"> <a class='nav-link' href='/about'>About Us</a></li>
-        <li class="nav-item ipad-min-fs min-fs"> <a class="nav-link" href='/contact'>Contact</a></li>
-        <li class="nav-item ipad-min-fs min-fs"> <a class="nav-link" href='/career'>Career</a></li>
-        <li class="nav-item ipad-min-fs min-fs"> <a class="nav-link" href='#'><i class="fa fa-search"></i></a> </li>
-    </ul>
-  </div>
-</nav>
-<!-- <nav>
-  <div class="container">
-    <div class="flex">
-      <div class="log">
-        <img src="images/logo.png" alt="brand logo" srcset="" class="brand">
-      </div>
-      <div class="mini-flex">
-        <div class="f-div">
-
-        </div>
-        <div class="s-div">
-            <ul class="ul">
-              <li> <a href='/'>Home</a></li>
-              <li> <a href='/service'>Services </a></li>
-              <li> <a href='/about'>About Us</a></li>
-              <li> <a href='/contact'>Contact</a></li>
-              <li> <a href='/career'>Career</a></li>
-              <li> <a href='#'><i class="fa fa-search"></i></a> </li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>   -->
-
+<% include ./navbar %>
 <main>
-  <header>
+  <header id="index">
     <div class="wrapper">
-      <div class="container ">
-        <h1>Welcome To</h1>
-        <h1 class="text-sm-max-40 text-sm-min-40 text-tab-min-50 text-sm-max-35">Absoluterisktec</h1>
+      <div class="containe containment padding-left-sm-max-10 padding-left-850-max-35 padding-left-tab-min-90 padding-left-800-max-20">
+        <h1 class="text-xs-max-25">Welcome To</h1>
+        <h1 class="text-sm-max-40 text-sm-min-40 text-tab-min-50 text-xs-max-30">Absoluterisktec</h1>
 
       </div>
     </div>
   </header>
-  <section class="container-fluid" id="first-section">
-    <div class="d-fle row padding-right-sm-max-10 padding-left-sm-max-10">
+  <div class="bg-grey padding-bottom-50 margin-bottom-40">
+  <section class="container-fluid margin-bottom-30" id="first-section">
+    <div class="fixed-size-card d-fle row padding-right-sm-max-10 padding-left-sm-max-10">
+
       <div class="card bg-cyan text-white col-md-3 col-sm-5 margin-right-sm-min-10 ">
         <div class="card-body">
           <div class="d-flex flex-column">
@@ -145,7 +154,7 @@
                 <i class="fa fa-eye"></i>
                 <p>Vision</p>
               </div>
-              <p class="text-14">Sustainability at ART means ensuring long-term business resilience and success while positively contributing toward the economy, society and the environment.</p>
+              <p class="">Sustainability at ART means ensuring long-term business resilience and success while positively contributing toward the economy, society and the environment.</p>
             </div>
           </div>
         </div>
@@ -165,7 +174,7 @@
 
   </section>
 
-  <section id="second-section" class=" container padding-right-sm-max-10 padding-left-sm-max-10">
+  <section id="second-section" class=" containe padding-right-sm-max- padding-left-sm-max-15 padding-left-sm-max-10 padding-left-850-max-35 padding-left-tab-min-90 padding-left-800-max-20  padding-right-tab-min-90">
     <div class="">
       <div class="d-flex align-items-center ">
         <div class="h1 d-flex flex-column padding-right-15">
@@ -183,21 +192,21 @@
         <p class="margin-bottom-10">
           We are committed to providing added value by leveraging on technical experience from our industry recognised engineers. </p>
 
-          <button class="btn btn-outline-cyan">
+          <button class="btn border-width-2 border-color-cyan-like btn-outline-cyan margin-top-15">
             LEARN MORE
           </button>
       </div>
     </div>
   </section>
-
-  <section id="third-section" class="container margin-top-60">
+</div>
+  <section id="third-section" class="containe margin-top-60 margin-bottom-150 margin-bottom-sm-max-70 padding-left-sm-max-10 padding-left-850-max-35 padding-left-850-min-90 padding-left-800-max-20 " style="width: 95%;">
     <div class="h1 d-flex align-items-center">
       <h1 class="text-tab-min-25"> Market Sectors </h1>
       <span class="line"></span>
     </div>
 
     <div class="wrap row padding-right-sm-max-10 padding-left-sm-max-10 margin-top-30 ">
-      <div class="col-md-4 col-sm-5 mx-auto margin-bottom-sm-max-30">
+      <div class="col-md-4 col-sm-5 mx-auto margin-bottom-tab-max-30">
         <div class="">
           <div class="card-bod">
           <img src="images/technology.png" class="w-100" alt="" srcset="">
@@ -209,7 +218,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-5 margin-right-sm-min- mx-auto margin-bottom-sm-max-30">
+      <div class="col-md-4 col-sm-5 margin-right-sm-min- mx-auto margin-bottom-tab-max-30">
         <div class="">
           <div class="card-bod">
           <img src="images/energy.png" class="w-100" alt="" srcset="">
@@ -221,7 +230,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-5 margin-right-sm-min- mx-auto margin-bottom-sm-max-30">
+      <div class="col-md-4 col-sm-5 margin-right-sm-min- mx-auto margin-bottom-tab-max-30">
         <div class="car">
           <div class="card-bod">
           <img src="images/enterprise.png" alt="" class="w-100" srcset="">
@@ -234,7 +243,7 @@
       </div>
 
 
-      <div class="col-md-4 col-sm-5 ml-auto margin-bottom-sm-max-30">
+      <div class="col-md-4 col-sm-5 margin-left-tab-min-auto margin-bottom-tab-max-30 margin-top-tab-min-50 margin-x-tab-max-auto">
         <div class="car">
           <div class="card-bod">
           <img src="images/oilandgas.png" alt="" class="w-100" srcset="">
@@ -246,7 +255,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-5 margin-right-sm-min- mr-auto margin-bottom-sm-max-30">
+      <div class="col-md-4 col-sm-5 margin-right-sm-min- margin-right-tab-min-auto margin-bottom-tab-max-30 margin-top-tab-min-50 padding-left-tab-max-30">
         <div class="car">
           <div class="card-bod">
           <img src="images/rail.png" alt="" class="w-100" srcset="">
@@ -260,40 +269,5 @@
     </div>
   </section>
 
-  <section id="forth-section" class="mt-5 bg-oil-dark">
-    <footer class="container">
-      <div class="row mx-auto pt-5">
-        <div class="col-sm-5 col-md-5 mx-auto">
-          <h2 >About Us</h2>
-          <p class="mb-3">Absolute Risk Technology Ltd. was established in 2009 and offers specialist Systems Engineering and System Assurance services to major hazard industry sectors. </p>
-          <p class="" >
-            We are committed to providing added value by leveraging on technical experience from our industry recognised engineers.
-          </p>
-
-        </div>
-
-        <div class="quicklink col-md-3 col-sm-5 margin-top-sm-max-15 mx-auto">
-          <h2 >Quick Links</h2>
-          <ul class='list-style-none'>
-            <li>Renewables</li>
-            <li>Oil & Gas</li>
-            <li>Transport</li>
-            <li>technology</li>
-            <li>Enterprise Asset Management</li>
-            <li>Careers</li>
-          </ul>
-        </div>
-
-        <div class="col-md-3 col-sm-5 mx-auto margin-top-sm-max-15 contact">
-          <h2 class="">Contact Us</h2>
-          <div class="d-flex justify-content-around w-50 mt-2">
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitter"></i>
-          </div>
-        </div>
-      </div>
-
-    </footer>
-  </section>
+<% include ./footer %>
 </main>

@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  let url = req.originalUrl.split('/')[1] || 'home';
+  res.render('index', { title: 'Welcome to Absoluterisktec', url });
 });
 
 module.exports = router;
